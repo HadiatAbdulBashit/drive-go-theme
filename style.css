@@ -1,0 +1,264 @@
+/*
+Theme Name: Drive Go Theme
+Theme URI: https://github.com/HadiatAbdulBashit/drive-go-theme
+Author: Hadiat A B
+Author URI: https://github.com/HadiatAbdulBashit
+Description: Simple rental WooCommerce theme, light and fast.
+Version: 0.9
+Tested on: 6.7
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: drive-go
+Tags: booking, rental, block-patterns
+*/
+
+.woocommerce div.product form.cart {
+  display: block;
+}
+
+.woocommerce div.product form.cart div.quantity {
+  display: none;
+}
+
+.woocommerce form .form-row {
+  padding: 0;
+  margin: 0;
+  display: flex !important;
+  gap: 10px;
+}
+.woocommerce form .form-row::before {
+  content: none;
+}
+
+.picker__input {
+  padding: 10px;
+}
+
+.woocommerce-page form .form-row label {
+  margin: 0;
+}
+
+.wc-block-product-template__responsive .wp-block-group a.button,
+.wp-block-post .wp-block-group a.button {
+  width: 100%;
+  background-color: var(--wp--preset--color--primary);
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+  color: var(--wp--preset--color--base);
+  text-decoration: none;
+}
+
+.wc-block-components-notice-banner > .wc-block-components-notice-banner__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+:root :where(.wp-element-button:visited, .wp-block-button__link:visited) {
+  color: var(--wp--preset--color--base) !important;
+}
+
+.wceb_picker_wrap {
+  gap: 10px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  width: fit-content;
+  align-items: flex-end;
+}
+
+@media (max-width: 1280px) {
+  .wceb_picker_wrap {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 920px) {
+  .tag-line {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .wc-block-product .wp-block-group .wp-block-group-is-layout-flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .wc-block-product .wp-block-group .wp-block-group-is-layout-flex a {
+    font-size: large;
+    font-weight: 500;
+  }
+}
+
+.woocommerce.wc-block-catalog-sorting select.orderby {
+  padding: 10px 20px 10px 10px;
+}
+
+.wc-block-mini-cart__footer .wc-block-mini-cart__footer-actions .wc-block-components-button.wc-block-mini-cart__footer-cart {
+  background-color: var(--wp--preset--color--contrast);
+}
+
+.drive-go-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.drive-go-modal-content {
+  background: #fff;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  max-height: 80vh; /* Batasi tinggi maksimum */
+  overflow-y: auto;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.drive-go-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.drive-go-booking-btn {
+  display: inline-block;
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--base);
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.drive-go-booking-btn:hover {
+  background-color: var(--wp--preset--color--secondary);
+}
+
+.drive-go-attributes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.drive-go-attributes div {
+  background: #f9f9f9;
+  padding: 8px;
+  font-size: 14px;
+}
+
+button.wc-bookings-booking-form-button {
+  content: "Booking Now" !important;
+}
+
+.woocommerce-MyAccount-content form .form-row,
+form.woocommerce-form-login .form-row {
+  flex-direction: column;
+}
+
+div.search_result {
+  display: none;
+}
+
+.search_bar {
+  position: relative;
+}
+
+div.search_bar form {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: auto;
+}
+
+div.search_bar select {
+  width: 50%;
+}
+
+div.search_bar input {
+  width: 100%;
+}
+
+div.search_bar input,
+div.search_bar select {
+  padding: 10px;
+}
+
+div.search_bar div#datafetch {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  width: -webkit-fill-available;
+}
+
+div.search_bar div#datafetch ul {
+  max-width: 600px;
+  list-style: none;
+  padding: 0;
+  border: 1px solid var(--wp--preset--color--contrast);
+  background-color: var(--wp--preset--color--base);
+  margin: 0 auto;
+  max-height: 50vh;
+  overflow: auto;
+}
+
+div#datafetch li img {
+  width: 100%;
+  height: auto;
+}
+
+div#datafetch li a {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  align-items: center;
+  justify-items: start;
+  gap: 10px;
+  color: #000;
+  padding: 5px;
+  background: #fff;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+div#datafetch li a:hover {
+  color: var(--ast-global-color-0);
+  background-color: #0001;
+}
+
+div#datafetch div.search-desc-wrapper {
+  flex-grow: 1;
+}
+
+div#datafetch div.search-desc-wrapper p {
+  margin: 0;
+  font-size: 12px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
+  color: var(--wp--preset--color--contrast);
+}
