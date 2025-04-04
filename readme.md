@@ -4,6 +4,8 @@
 
 This custom WordPress theme is designed for seamless integration with **WooCommerce** and **EasyBooking**, providing an optimized experience for e-commerce and booking functionalities. The theme includes a modern layout, intuitive user experience, and essential features such as category-based product search, filtering, and a hover-based product quick view.
 
+## [Live view](https://dev-lamp-u.pantheonsite.io/)
+
 ## Theme Setup Instructions
 
 ### Prerequisites
